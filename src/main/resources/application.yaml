@@ -1,0 +1,27 @@
+server:
+  port: 9400
+
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:reports}
+#    driver-class-name: org.postgresql.Driver
+#    username: postgres
+#    password: 130263
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    hibernate:
+#      ddl-auto: update
+
+application:
+  reports-service:
+    datasource:
+      url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:reports}
+      driver-class-name: org.postgresql.Driver
+      username: postgres
+      password: 644CWQA2s2kQRr9
+  service-registration:
+    datasource:
+      url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:serviceregistration}
+      driver-class-name: org.postgresql.Driver
+      username: postgres
+      password: 644CWQA2s2kQRr9
